@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "has_reactor": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "voltaic:reactor"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_reactor"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

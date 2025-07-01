@@ -1,0 +1,24 @@
+modLoader="kotlinforforge" # modLoader="javafml"
+loaderVersion="[4,)" # loaderVersion="[46,)"
+license="All Rights Reserved"
+[[mods]]
+modId="twkad"
+version="0.0.0"
+displayName="Those Who Know... Additions"
+logoFile=""
+authors="xokem"
+description='''
+sample text
+'''
+[[dependencies.twkad]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.twkad]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.0,1.21)"
+ordering="NONE"
+side="CLIENT"

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "voltaic:asbestos_composite"
+    },
+    {
+      "item": "voltaic:small_gauge_cuprum_wire"
+    }
+  ],
+  "result": {
+    "item": "voltaic:small_gauge_asbestos_covered_cuprum_cable"
+  }
+}

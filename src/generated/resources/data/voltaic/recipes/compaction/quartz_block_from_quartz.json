@@ -1,0 +1,18 @@
+{
+  "type": "voltaic:compaction",
+  "duration": 100,
+  "inputs": {
+    "0": {
+      "amount": 4,
+      "consumed": true,
+      "item": "minecraft:quartz"
+    }
+  },
+  "outputs": {
+    "0": {
+      "amount": 1,
+      "chance": 10000,
+      "item": "minecraft:quartz_block"
+    }
+  }
+}

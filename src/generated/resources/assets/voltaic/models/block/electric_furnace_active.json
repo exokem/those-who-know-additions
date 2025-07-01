@@ -1,0 +1,11 @@
+{
+  "parent": "voltaic:block/orientable_all",
+  "textures": {
+    "back": "voltaic:block/device/electric_furnace/active/back",
+    "bottom": "voltaic:block/device/electric_furnace/active/bottom",
+    "front": "voltaic:block/device/electric_furnace/active/front",
+    "left": "voltaic:block/device/electric_furnace/active/left",
+    "right": "voltaic:block/device/electric_furnace/active/right",
+    "top": "voltaic:block/device/electric_furnace/active/top"
+  }
+}

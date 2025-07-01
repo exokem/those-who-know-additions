@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "voltaic:asbestos_composite"
+    },
+    {
+      "item": "voltaic:large_gauge_aluminium_wire"
+    }
+  ],
+  "result": {
+    "item": "voltaic:large_gauge_asbestos_covered_aluminium_cable"
+  }
+}

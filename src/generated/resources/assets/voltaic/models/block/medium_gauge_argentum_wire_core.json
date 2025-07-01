@@ -1,0 +1,7 @@
+{
+  "parent": "voltaic:block/multipart_size_4_core",
+  "textures": {
+    "type": "voltaic:block/multipart/wire/argentum/medium",
+    "particle": "voltaic:block/multipart/wire/argentum/medium"
+  }
+}

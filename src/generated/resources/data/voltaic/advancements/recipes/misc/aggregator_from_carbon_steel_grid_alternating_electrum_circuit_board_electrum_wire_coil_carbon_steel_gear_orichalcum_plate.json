@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_carbon_steel_grid": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "voltaic:carbon_steel_grid"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "voltaic:aggregator_from_carbon_steel_grid_alternating_electrum_circuit_board_electrum_wire_coil_carbon_steel_gear_orichalcum_plate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_carbon_steel_grid",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "voltaic:aggregator_from_carbon_steel_grid_alternating_electrum_circuit_board_electrum_wire_coil_carbon_steel_gear_orichalcum_plate"
+    ]
+  },
+  "sends_telemetry_event": false
+}

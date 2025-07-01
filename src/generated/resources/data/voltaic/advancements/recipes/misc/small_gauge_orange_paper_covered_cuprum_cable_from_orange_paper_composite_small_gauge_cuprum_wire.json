@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_orange_paper_composite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "voltaic:orange_paper_composite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "voltaic:small_gauge_orange_paper_covered_cuprum_cable_from_orange_paper_composite_small_gauge_cuprum_wire"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_orange_paper_composite",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "voltaic:small_gauge_orange_paper_covered_cuprum_cable_from_orange_paper_composite_small_gauge_cuprum_wire"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "voltaic:paper_composite"
+    },
+    "D": {
+      "tag": "forge:dyes/yellow"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "CDC",
+    "CCC"
+  ],
+  "result": {
+    "count": 8,
+    "item": "voltaic:yellow_paper_composite"
+  },
+  "show_notification": true
+}

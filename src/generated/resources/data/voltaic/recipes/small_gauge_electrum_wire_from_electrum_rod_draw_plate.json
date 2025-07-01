@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "voltaic:electrum_rod"
+    },
+    {
+      "item": "voltaic:draw_plate"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "item": "voltaic:small_gauge_electrum_wire"
+  }
+}

@@ -1,0 +1,32 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+run-data
+/.gitattributes
+/gradle/wrapper/gradle-wrapper.jar
+/gradle/wrapper/gradle-wrapper.properties
+/gradlew
+/gradlew.bat
+/src/generated/resources/.cache/59eb3dbb5f86130e09b3c62d89b9525ee01cf52d
+/src/generated/resources/.cache/a23122ee872dacd72a46122a00e4463cb1f77ca4
+/src/generated/resources/.cache/
+/assetexport.cache

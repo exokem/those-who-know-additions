@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "overrides": [
+    {
+      "model": "voltaic:item/wolfram_tetracarbide_paxel_shovel_axe",
+      "predicate": {
+        "voltaic:paxel_status": 0.5
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "voltaic:item/wolfram_tetracarbide_paxel_pickaxe_hoe"
+  }
+}

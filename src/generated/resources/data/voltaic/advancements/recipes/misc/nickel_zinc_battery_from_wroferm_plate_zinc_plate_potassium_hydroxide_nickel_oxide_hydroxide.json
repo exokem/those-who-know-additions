@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "voltaic:nickel_zinc_battery_from_wroferm_plate_zinc_plate_potassium_hydroxide_nickel_oxide_hydroxide"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wroferm_plate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "voltaic:wroferm_plate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wroferm_plate",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "voltaic:nickel_zinc_battery_from_wroferm_plate_zinc_plate_potassium_hydroxide_nickel_oxide_hydroxide"
+    ]
+  },
+  "sends_telemetry_event": false
+}

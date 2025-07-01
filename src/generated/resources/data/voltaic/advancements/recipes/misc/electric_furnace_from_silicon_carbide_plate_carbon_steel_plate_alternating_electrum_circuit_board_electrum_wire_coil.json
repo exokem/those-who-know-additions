@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_silicon_carbide_plate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "voltaic:silicon_carbide_plate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "voltaic:electric_furnace_from_silicon_carbide_plate_carbon_steel_plate_alternating_electrum_circuit_board_electrum_wire_coil"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_silicon_carbide_plate",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "voltaic:electric_furnace_from_silicon_carbide_plate_carbon_steel_plate_alternating_electrum_circuit_board_electrum_wire_coil"
+    ]
+  },
+  "sends_telemetry_event": false
+}

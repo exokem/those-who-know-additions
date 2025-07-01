@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "voltaic:block/native_platinum_ore"
+    }
+  }
+}

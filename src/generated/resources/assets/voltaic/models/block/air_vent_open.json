@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "voltaic:block/device/air_vent/open/bottom",
+    "side": "voltaic:block/device/air_vent/open/side",
+    "top": "voltaic:block/device/air_vent/open/top"
+  }
+}

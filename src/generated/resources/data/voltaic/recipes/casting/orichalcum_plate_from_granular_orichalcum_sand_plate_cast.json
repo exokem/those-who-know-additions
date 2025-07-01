@@ -1,0 +1,23 @@
+{
+  "type": "voltaic:casting",
+  "duration": 100,
+  "inputs": {
+    "0": {
+      "amount": 1,
+      "consumed": true,
+      "item": "voltaic:granular_orichalcum"
+    },
+    "1": {
+      "amount": 1,
+      "consumed": false,
+      "item": "voltaic:sand_plate_cast"
+    }
+  },
+  "outputs": {
+    "0": {
+      "amount": 1,
+      "chance": 10000,
+      "item": "voltaic:orichalcum_plate"
+    }
+  }
+}

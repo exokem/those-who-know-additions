@@ -1,0 +1,11 @@
+{
+  "parent": "voltaic:block/orientable_all",
+  "textures": {
+    "back": "voltaic:block/device/reactor/inactive/back",
+    "bottom": "voltaic:block/device/reactor/inactive/bottom",
+    "front": "voltaic:block/device/reactor/inactive/front",
+    "left": "voltaic:block/device/reactor/inactive/left",
+    "right": "voltaic:block/device/reactor/inactive/right",
+    "top": "voltaic:block/device/reactor/inactive/top"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "voltaic:alternating_electrum_circuit_board"
+    },
+    "E": {
+      "item": "voltaic:electrum_wire_coil"
+    },
+    "P": {
+      "item": "voltaic:silicon_carbide_plate"
+    },
+    "S": {
+      "item": "voltaic:carbon_steel_plate"
+    }
+  },
+  "pattern": [
+    "SCS",
+    "PEP",
+    "SCS"
+  ],
+  "result": {
+    "item": "voltaic:electric_furnace"
+  },
+  "show_notification": true
+}

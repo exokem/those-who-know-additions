@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chrysotile": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "voltaic:chrysotile"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "voltaic:asbestos_fibre_from_chrysotile"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_chrysotile",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "voltaic:asbestos_fibre_from_chrysotile"
+    ]
+  },
+  "sends_telemetry_event": false
+}

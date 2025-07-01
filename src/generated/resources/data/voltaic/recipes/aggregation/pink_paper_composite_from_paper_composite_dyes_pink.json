@@ -1,0 +1,23 @@
+{
+  "type": "voltaic:aggregation",
+  "duration": 120,
+  "inputs": {
+    "0": {
+      "amount": 12,
+      "consumed": true,
+      "item": "voltaic:paper_composite"
+    },
+    "1": {
+      "amount": 1,
+      "consumed": true,
+      "tag": "forge:dyes/pink"
+    }
+  },
+  "outputs": {
+    "0": {
+      "amount": 12,
+      "chance": 10000,
+      "item": "voltaic:pink_paper_composite"
+    }
+  }
+}

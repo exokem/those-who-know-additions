@@ -1,0 +1,38 @@
+{
+  "type": "voltaic:synthesis",
+  "duration": 100,
+  "inputs": {
+    "0": {
+      "amount": 1,
+      "consumed": true,
+      "item": "voltaic:calcium_oxide"
+    },
+    "1": {
+      "amount": 1,
+      "consumed": true,
+      "item": "voltaic:wood_ash"
+    },
+    "2": {
+      "amount": 1,
+      "consumed": true,
+      "item": "minecraft:air"
+    },
+    "3": {
+      "amount": 1,
+      "consumed": true,
+      "item": "voltaic:crushed_ice"
+    }
+  },
+  "outputs": {
+    "0": {
+      "amount": 1,
+      "chance": 10000,
+      "item": "voltaic:calcium_carbonate"
+    },
+    "1": {
+      "amount": 2,
+      "chance": 10000,
+      "item": "voltaic:potassium_hydroxide"
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "voltaic:block/refractory_furnace_active"
+      },
+      "when": {
+        "active": "true",
+        "orientation": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "voltaic:block/refractory_furnace_inactive"
+      },
+      "when": {
+        "active": "false",
+        "orientation": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "voltaic:block/refractory_tile"
+      },
+      "when": {
+        "open": "false",
+        "orientation": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "voltaic:block/refractory_furnace_active",
+        "y": 180
+      },
+      "when": {
+        "active": "true",
+        "orientation": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "voltaic:block/refractory_furnace_inactive",
+        "y": 180
+      },
+      "when": {
+        "active": "false",
+        "orientation": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "voltaic:block/refractory_tile",
+        "y": 180
+      },
+      "when": {
+        "open": "false",
+        "orientation": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "voltaic:block/refractory_furnace_active",
+        "y": 270
+      },
+      "when": {
+        "active": "true",
+        "orientation": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "voltaic:block/refractory_furnace_inactive",
+        "y": 270
+      },
+      "when": {
+        "active": "false",
+        "orientation": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "voltaic:block/refractory_tile",
+        "y": 270
+      },
+      "when": {
+        "open": "false",
+        "orientation": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "voltaic:block/refractory_furnace_active",
+        "y": 90
+      },
+      "when": {
+        "active": "true",
+        "orientation": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "voltaic:block/refractory_furnace_inactive",
+        "y": 90
+      },
+      "when": {
+        "active": "false",
+        "orientation": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "voltaic:block/refractory_tile",
+        "y": 90
+      },
+      "when": {
+        "open": "false",
+        "orientation": "east"
+      }
+    }
+  ]
+}

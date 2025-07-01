@@ -1,0 +1,10 @@
+{
+  "parent": "voltaic:item/multipart_cable_size_4",
+  "textures": {
+    "cover": "voltaic:block/multipart/wire/lime_paper/medium",
+    "cover_end": "voltaic:block/multipart/wire/lime_paper/medium_side",
+    "material": "voltaic:block/multipart/wire/argentum_plated_cuprum/medium",
+    "material_end": "voltaic:block/multipart/wire/argentum_plated_cuprum/medium_side",
+    "particle": "voltaic:block/multipart/wire/lime_paper/medium"
+  }
+}

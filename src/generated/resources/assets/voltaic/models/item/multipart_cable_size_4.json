@@ -1,0 +1,159 @@
+{
+  "parent": "minecraft:block/block",
+  "display": {
+    "firstperson_lefthand": {
+      "rotation": [
+        10,
+        0,
+        0
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        10,
+        0,
+        0
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        90
+      ]
+    },
+    "ground": {
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "gui": {
+      "rotation": [
+        -60,
+        0,
+        -45
+      ]
+    }
+  },
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "texture": "#material_end"
+        },
+        "east": {
+          "texture": "#material",
+          "uv": [
+            6.0,
+            0.0,
+            10.0,
+            10.0
+          ]
+        },
+        "north": {
+          "texture": "#material",
+          "uv": [
+            6.0,
+            0.0,
+            10.0,
+            10.0
+          ]
+        },
+        "south": {
+          "texture": "#material",
+          "uv": [
+            6.0,
+            5.0,
+            10.0,
+            15.0
+          ]
+        },
+        "up": {
+          "texture": "#material_end"
+        },
+        "west": {
+          "texture": "#material",
+          "uv": [
+            6.0,
+            0.0,
+            10.0,
+            10.0
+          ]
+        }
+      },
+      "from": [
+        6,
+        2.8,
+        6
+      ],
+      "to": [
+        10,
+        13.2,
+        10
+      ]
+    },
+    {
+      "faces": {
+        "down": {
+          "texture": "#cover_end"
+        },
+        "east": {
+          "texture": "#cover",
+          "uv": [
+            5.0,
+            0.0,
+            11.0,
+            10.0
+          ]
+        },
+        "north": {
+          "texture": "#cover",
+          "uv": [
+            5.0,
+            0.0,
+            11.0,
+            10.0
+          ]
+        },
+        "south": {
+          "texture": "#cover",
+          "uv": [
+            5.0,
+            0.0,
+            11.0,
+            10.0
+          ]
+        },
+        "up": {
+          "texture": "#cover_end"
+        },
+        "west": {
+          "texture": "#cover",
+          "uv": [
+            5.0,
+            0.0,
+            11.0,
+            10.0
+          ]
+        }
+      },
+      "from": [
+        5,
+        3,
+        5
+      ],
+      "to": [
+        11,
+        13,
+        11
+      ]
+    }
+  ]
+}

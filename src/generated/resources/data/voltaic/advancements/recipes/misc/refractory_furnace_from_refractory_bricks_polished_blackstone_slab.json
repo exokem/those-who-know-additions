@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_refractory_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "voltaic:refractory_bricks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "voltaic:refractory_furnace_from_refractory_bricks_polished_blackstone_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_refractory_bricks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "voltaic:refractory_furnace_from_refractory_bricks_polished_blackstone_slab"
+    ]
+  },
+  "sends_telemetry_event": false
+}

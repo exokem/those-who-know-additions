@@ -1,0 +1,7 @@
+{
+  "parent": "voltaic:block/multipart_size_6_core",
+  "textures": {
+    "type": "voltaic:block/multipart/wire/black_paper/medium",
+    "particle": "voltaic:block/multipart/wire/black_paper/medium"
+  }
+}

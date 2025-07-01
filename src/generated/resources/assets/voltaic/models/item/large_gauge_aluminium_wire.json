@@ -1,0 +1,8 @@
+{
+  "parent": "voltaic:item/multipart_wire_size_6",
+  "textures": {
+    "type": "voltaic:block/multipart/wire/aluminium/large",
+    "end": "voltaic:block/multipart/wire/aluminium/large_side",
+    "particle": "voltaic:block/multipart/wire/aluminium/large"
+  }
+}

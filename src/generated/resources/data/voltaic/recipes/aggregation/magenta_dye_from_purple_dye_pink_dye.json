@@ -1,0 +1,23 @@
+{
+  "type": "voltaic:aggregation",
+  "duration": 100,
+  "inputs": {
+    "0": {
+      "amount": 1,
+      "consumed": true,
+      "item": "minecraft:purple_dye"
+    },
+    "1": {
+      "amount": 1,
+      "consumed": true,
+      "item": "minecraft:pink_dye"
+    }
+  },
+  "outputs": {
+    "0": {
+      "amount": 2,
+      "chance": 10000,
+      "item": "minecraft:magenta_dye"
+    }
+  }
+}

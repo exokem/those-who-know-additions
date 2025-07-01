@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "voltaic:asbestos_fibre"
+    }
+  },
+  "pattern": [
+    "FF",
+    "FF"
+  ],
+  "result": {
+    "count": 2,
+    "item": "voltaic:woven_asbestos"
+  },
+  "show_notification": true
+}

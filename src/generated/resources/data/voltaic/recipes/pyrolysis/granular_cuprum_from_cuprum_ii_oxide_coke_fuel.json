@@ -1,0 +1,23 @@
+{
+  "type": "voltaic:pyrolysis",
+  "duration": 100,
+  "inputs": {
+    "0": {
+      "amount": 3,
+      "consumed": true,
+      "item": "voltaic:cuprum_ii_oxide"
+    },
+    "1": {
+      "amount": 1,
+      "consumed": true,
+      "tag": "voltaic:coke_fuel"
+    }
+  },
+  "outputs": {
+    "0": {
+      "amount": 1,
+      "chance": 10000,
+      "item": "voltaic:granular_cuprum"
+    }
+  }
+}

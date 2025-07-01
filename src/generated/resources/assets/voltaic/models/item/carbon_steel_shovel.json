@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "voltaic:item/carbon_steel_shovel"
+  }
+}

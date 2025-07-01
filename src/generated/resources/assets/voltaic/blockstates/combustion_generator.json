@@ -1,0 +1,50 @@
+{
+  "variants": {
+    "burning=false,orientation=down": {
+      "model": "voltaic:block/combustion_generator_inactive",
+      "x": 270
+    },
+    "burning=false,orientation=east": {
+      "model": "voltaic:block/combustion_generator_inactive",
+      "y": 90
+    },
+    "burning=false,orientation=north": {
+      "model": "voltaic:block/combustion_generator_inactive"
+    },
+    "burning=false,orientation=south": {
+      "model": "voltaic:block/combustion_generator_inactive",
+      "y": 180
+    },
+    "burning=false,orientation=up": {
+      "model": "voltaic:block/combustion_generator_inactive",
+      "x": 90
+    },
+    "burning=false,orientation=west": {
+      "model": "voltaic:block/combustion_generator_inactive",
+      "y": 270
+    },
+    "burning=true,orientation=down": {
+      "model": "voltaic:block/combustion_generator_active",
+      "x": 270
+    },
+    "burning=true,orientation=east": {
+      "model": "voltaic:block/combustion_generator_active",
+      "y": 90
+    },
+    "burning=true,orientation=north": {
+      "model": "voltaic:block/combustion_generator_active"
+    },
+    "burning=true,orientation=south": {
+      "model": "voltaic:block/combustion_generator_active",
+      "y": 180
+    },
+    "burning=true,orientation=up": {
+      "model": "voltaic:block/combustion_generator_active",
+      "x": 90
+    },
+    "burning=true,orientation=west": {
+      "model": "voltaic:block/combustion_generator_active",
+      "y": 270
+    }
+  }
+}

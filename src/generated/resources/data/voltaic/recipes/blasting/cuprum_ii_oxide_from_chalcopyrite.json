@@ -1,0 +1,18 @@
+{
+  "type": "voltaic:blasting",
+  "duration": 100,
+  "inputs": {
+    "0": {
+      "amount": 3,
+      "consumed": true,
+      "item": "voltaic:chalcopyrite"
+    }
+  },
+  "outputs": {
+    "0": {
+      "amount": 1,
+      "chance": 10000,
+      "item": "voltaic:cuprum_ii_oxide"
+    }
+  }
+}

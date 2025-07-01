@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "K": {
+      "item": "voltaic:potassium_hydroxide"
+    },
+    "N": {
+      "item": "voltaic:argentum_i_oxide"
+    },
+    "W": {
+      "item": "voltaic:wroferm_plate"
+    },
+    "Z": {
+      "item": "voltaic:zinc_plate"
+    }
+  },
+  "pattern": [
+    "WZW",
+    "WKW",
+    "WNW"
+  ],
+  "result": {
+    "item": "voltaic:argentum_oxide_battery"
+  },
+  "show_notification": true
+}

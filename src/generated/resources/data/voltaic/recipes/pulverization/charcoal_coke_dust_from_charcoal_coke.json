@@ -1,0 +1,18 @@
+{
+  "type": "voltaic:pulverization",
+  "duration": 100,
+  "inputs": {
+    "0": {
+      "amount": 1,
+      "consumed": true,
+      "item": "voltaic:charcoal_coke"
+    }
+  },
+  "outputs": {
+    "0": {
+      "amount": 1,
+      "chance": 10000,
+      "item": "voltaic:charcoal_coke_dust"
+    }
+  }
+}

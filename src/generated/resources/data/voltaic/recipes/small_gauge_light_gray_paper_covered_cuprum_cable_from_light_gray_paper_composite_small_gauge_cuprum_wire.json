@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "voltaic:light_gray_paper_composite"
+    },
+    {
+      "item": "voltaic:small_gauge_cuprum_wire"
+    }
+  ],
+  "result": {
+    "item": "voltaic:small_gauge_light_gray_paper_covered_cuprum_cable"
+  }
+}

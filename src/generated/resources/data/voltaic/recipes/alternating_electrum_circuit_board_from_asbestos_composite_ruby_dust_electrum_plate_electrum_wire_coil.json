@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "voltaic:asbestos_composite"
+    },
+    "C": {
+      "item": "voltaic:electrum_plate"
+    },
+    "E": {
+      "item": "voltaic:electrum_wire_coil"
+    },
+    "R": {
+      "item": "voltaic:ruby_dust"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "RCR",
+    "EEE"
+  ],
+  "result": {
+    "item": "voltaic:alternating_electrum_circuit_board"
+  },
+  "show_notification": true
+}

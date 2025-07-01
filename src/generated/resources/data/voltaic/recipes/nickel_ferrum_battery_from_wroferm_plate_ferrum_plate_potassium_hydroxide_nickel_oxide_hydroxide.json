@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "K": {
+      "item": "voltaic:potassium_hydroxide"
+    },
+    "N": {
+      "item": "voltaic:nickel_oxide_hydroxide"
+    },
+    "W": {
+      "item": "voltaic:wroferm_plate"
+    },
+    "Z": {
+      "item": "voltaic:ferrum_plate"
+    }
+  },
+  "pattern": [
+    "WZW",
+    "WKW",
+    "WNW"
+  ],
+  "result": {
+    "item": "voltaic:nickel_ferrum_battery"
+  },
+  "show_notification": true
+}

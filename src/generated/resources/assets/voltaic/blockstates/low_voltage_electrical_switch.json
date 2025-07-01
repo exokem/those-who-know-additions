@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "voltaic:block/low_voltage_electrical_switch_closed"
+    },
+    "open=true": {
+      "model": "voltaic:block/low_voltage_electrical_switch_open"
+    }
+  }
+}

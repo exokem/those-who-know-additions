@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "voltaic:block/air_vent_closed"
+    },
+    "open=true": {
+      "model": "voltaic:block/air_vent_open"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "voltaic:block/device/battery_box/other",
+    "east": "voltaic:block/device/battery_box/output",
+    "north": "voltaic:block/device/battery_box/3/side",
+    "particle": "voltaic:block/device/battery_box/3/side",
+    "south": "voltaic:block/device/battery_box/input",
+    "up": "voltaic:block/device/battery_box/other",
+    "west": "voltaic:block/device/battery_box/output"
+  }
+}

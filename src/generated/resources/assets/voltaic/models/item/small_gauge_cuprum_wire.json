@@ -1,0 +1,8 @@
+{
+  "parent": "voltaic:item/multipart_wire_size_2",
+  "textures": {
+    "type": "voltaic:block/multipart/wire/cuprum/small",
+    "end": "voltaic:block/multipart/wire/cuprum/small_side",
+    "particle": "voltaic:block/multipart/wire/cuprum/small"
+  }
+}

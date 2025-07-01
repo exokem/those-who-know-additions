@@ -1,0 +1,21 @@
+{
+  "values": [
+    "voltaic:hematite_ore",
+    "voltaic:deepslate_hematite_ore",
+    "voltaic:rutile_ore",
+    "voltaic:deepslate_rutile_ore",
+    "voltaic:triphylite_ore",
+    "voltaic:deepslate_triphylite_ore",
+    "voltaic:deepslate_tungstate_ore",
+    "voltaic:deepslate_monazite_ore",
+    "voltaic:deepslate_native_osmiridium_ore",
+    "voltaic:deepslate_pitchblende_ore",
+    "voltaic:diamond_ore",
+    "voltaic:deepslate_diamond_ore",
+    "voltaic:ruby_ore",
+    "voltaic:deepslate_ruby_ore",
+    "voltaic:sapphire_ore",
+    "voltaic:deepslate_sapphire_ore",
+    "voltaic:deepslate_painite_ore"
+  ]
+}

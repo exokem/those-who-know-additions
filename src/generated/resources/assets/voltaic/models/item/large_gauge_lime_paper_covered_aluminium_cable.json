@@ -1,0 +1,10 @@
+{
+  "parent": "voltaic:item/multipart_cable_size_6",
+  "textures": {
+    "cover": "voltaic:block/multipart/wire/lime_paper/large",
+    "cover_end": "voltaic:block/multipart/wire/lime_paper/large_side",
+    "material": "voltaic:block/multipart/wire/aluminium/large",
+    "material_end": "voltaic:block/multipart/wire/aluminium/large_side",
+    "particle": "voltaic:block/multipart/wire/lime_paper/large"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "voltaic:pulverization",
+  "duration": 100,
+  "inputs": {
+    "0": {
+      "amount": 1,
+      "consumed": true,
+      "tag": "voltaic:has_light_blue_dye"
+    }
+  },
+  "outputs": {
+    "0": {
+      "amount": 1,
+      "chance": 10000,
+      "item": "minecraft:light_blue_dye"
+    }
+  }
+}
