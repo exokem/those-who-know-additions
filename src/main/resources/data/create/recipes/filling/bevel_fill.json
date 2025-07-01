@@ -1,0 +1,19 @@
+
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "twkad:bevel_form"
+    },
+    {
+      "amount": 10,
+      "fluid": "tconstruct:molten_zinc",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "numismatics:bevel"
+    }
+  ]
+}

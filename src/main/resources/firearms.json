@@ -1,0 +1,283 @@
+{
+    "categories": {
+        "pistol": {
+            "id": "pistol",
+            "name": "Pistol",
+            "ammunition": "tacz:light_cartridge",
+            "components": {
+                "receiver": "light",
+                "barrel": "short",
+                "grip": true,
+                "magazine": true,
+                "attachments": true,
+                "addons": [
+                    "kubejs:gunmetal_sheet"
+                ]
+            },
+            "entries": [
+                {
+                    "id": "deagle",
+                    "name": "Desert Eagle",
+                    "fireMode": "SEMI"
+                },
+                {
+                    "id": "cz75",
+                    "name": "CZ-75",
+                    "fireMode": "AUTO"
+                },
+                {
+                    "id": "glock_17",
+                    "name": "Glock 17",
+                    "fireMode": "SEMI"
+                },
+                {
+                    "id": "p320",
+                    "name": "P320",
+                    "fireMode": "SEMI"
+                },
+                {
+                    "id": "m1911",
+                    "name": "M1911",
+                    "fireMode": "SEMI"
+                }
+            ]
+        },
+        "heavy_pistol": {
+            "id": "heavy_pistol",
+            "name": "Heavy Pistol",
+            "ammunition": "tacz:amr_cartridge",
+            "components": {
+                "receiver": "amr",
+                "barrel": "heavy",
+                "grip": true,
+                "magazine": true,
+                "attachments": true,
+                "addons": [
+                    "kubejs:gunmetal_double_sheet"
+                ]
+            },
+            "entries": [
+                {
+                    "id": "deagle_golden",
+                    "name": "Desert Eagle (Golden)",
+                    "fireMode": "SEMI"
+                }
+            ]
+        },
+        "submachine_gun": {
+            "id": "submachine_gun",
+            "name": "Submachine Gun",
+            "ammunition": "tacz:light_cartridge",
+            "components": {
+                "receiver": "light",
+                "barrel": "carbine",
+                "grip": true,
+                "magazine": true,
+                "attachments": true,
+                "addons": [
+                    "kubejs:gunmetal_sheet"
+                ]
+            },
+            "entries": [
+                {
+                    "id": "p90",
+                    "name": "P90",
+                    "fireMode": "AUTO"
+                },
+                {
+                    "id": "vector45",
+                    "name": "Vector",
+                    "fireMode": "AUTO"
+                },
+                {
+                    "id": "hk_mp5a5",
+                    "name": "MP5",
+                    "fireMode": "AUTO"
+                },
+                {
+                    "id": "uzi",
+                    "name": "Uzi",
+                    "fireMode": "AUTO"
+                },
+                {
+                    "id": "ump45",
+                    "name": "UMP",
+                    "fireMode": "AUTO"
+                }
+            ]
+        },
+        "shotgun": {
+            "id": "shotgun",
+            "name": "Shotgun",
+            "ammunition": "tacz:shotgun_shell",
+            "components": {
+                "receiver": "shotgun",
+                "barrel": "double",
+                "grip": true,
+                "magazine": true,
+                "attachments": true,
+                "addons": [
+                    "kubejs:gunmetal_double_sheet"
+                ]
+            },
+            "entries": [
+                {
+                    "id": "aa12",
+                    "name": "AA-12",
+                    "fireMode": "SEMI"
+                },
+                {
+                    "id": "m870",
+                    "name": "M870",
+                    "fireMode": "SEMI"
+                },
+                {
+                    "id": "db_long",
+                    "name": "Double Barrel",
+                    "fireMode": "SEMI"
+                }
+            ]
+        },
+        "rifle": {
+            "id": "rifle",
+            "name": "Rifle",
+            "ammunition": "tacz:rifle_cartridge",
+            "components": {
+                "receiver": "rifle",
+                "barrel": "rifle",
+                "grip": true,
+                "magazine": true,
+                "attachments": true,
+                "addons": [
+                    "kubejs:gunmetal_sheet"
+                ]
+            },
+            "entries": [
+                {
+                    "id": "aug",
+                    "name": "AUG",
+                    "fireMode": "AUTO"
+                },
+                {
+                    "id": "scar_l",
+                    "name": "SCAR-L",
+                    "fireMode": "AUTO"
+                },
+                {
+                    "id": "m16a4",
+                    "name": "M16-A4",
+                    "fireMode": "BURST"
+                },
+                {
+                    "id": "m16a1",
+                    "name": "M16-A1",
+                    "fireMode": "AUTO"
+                },
+                {
+                    "id": "m4a1",
+                    "name": "M4-A1",
+                    "fireMode": "AUTO"
+                },
+                {
+                    "id": "hk416d",
+                    "name": "HK-416",
+                    "fireMode": "AUTO"
+                },
+                {
+                    "id": "ak47",
+                    "name": "AK-47",
+                    "fireMode": "AUTO"
+                },
+                {
+                    "id": "qbz_95",
+                    "name": "QBZ-95",
+                    "fireMode": "AUTO"
+                },
+                {
+                    "id": "type_81",
+                    "name": "Type-81",
+                    "fireMode": "AUTO"
+                },
+                {
+                    "id": "sks_tactical",
+                    "name": "SKS",
+                    "fireMode": "SEMI"
+                },
+                {
+                    "id": "rpk",
+                    "name": "RPK",
+                    "fireMode": "AUTO"
+                }
+            ]
+        },
+        "precision_rifle": {
+            "id": "precision_rifle",
+            "name": "Precision Rifle",
+            "ammunition": "tacz:precision_cartridge",
+            "components": {
+                "receiver": "precision",
+                "barrel": "rifle",
+                "grip": true,
+                "magazine": true,
+                "attachments": true,
+                "addons": [
+                    "kubejs:gunmetal_sheet"
+                ]
+            },
+            "entries": [
+                {
+                    "id": "scar_h",
+                    "name": "SCAR-H",
+                    "fireMode": "SEMI"
+                },
+                {
+                    "id": "mk14",
+                    "name": "Mk14",
+                    "fireMode": "SEMI"
+                },
+                {
+                    "id": "hk_g3",
+                    "name": "HK-G3",
+                    "fireMode": "SEMI"
+                },
+                {
+                    "id": "ai_awp",
+                    "name": "AWP",
+                    "fireMode": "SEMI"
+                },
+                {
+                    "id": "m700",
+                    "name": "M700",
+                    "fireMode": "SEMI"
+                }
+            ]
+        },
+        "amr": {
+            "id": "amr",
+            "name": "AMR",
+            "ammunition": "tacz:amr_cartridge",
+            "components": {
+                "receiver": "amr",
+                "barrel": "heavy",
+                "grip": true,
+                "magazine": true,
+                "attachments": true,
+                "addons": [
+                    "kubejs:gunmetal_double_sheet"
+                ]
+            },
+            "entries": [
+                {
+                    "id": "m95",
+                    "name": "M95",
+                    "fireMode": "SEMI"
+                },
+                {
+                    "id": "m107",
+                    "name": "M107",
+                    "fireMode": "SEMI"
+                }
+            ]
+        }
+    }
+}

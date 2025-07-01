@@ -1,0 +1,19 @@
+
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "twkad:spur_form"
+    },
+    {
+      "amount": 10,
+      "fluid": "tconstruct:molten_copper",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "numismatics:spur"
+    }
+  ]
+}

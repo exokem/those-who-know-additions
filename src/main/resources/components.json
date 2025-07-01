@@ -1,0 +1,76 @@
+{
+    "metal": {
+        "Nugget": [
+            "Gunmetal"
+        ],
+        "Ingot": [
+            "Gunmetal"
+        ],
+        "Sheet": [
+            "Gunmetal"
+        ],
+        "Double Sheet": [
+            "Gunmetal"
+        ]
+    },
+    "firearm": {
+        "Receiver": {
+            "variants": {
+                "Light": true,
+                "Rifle": true,
+                "Precision": true,
+                "AMR": true,
+                "Shotgun": true
+            }
+        },
+        "Barrel": {
+            "variants": {
+                "Short": true,
+                "Carbine": true,
+                "Rifle": true,
+                "Heavy": true,
+                "Double": true
+            }
+        },
+        "Casing": {
+            "variants": {
+                "Light": true,
+                "Rifle": true,
+                "Precision": true,
+                "AMR": true
+            }
+        },
+        "Cartridge": {
+            "variants": {
+                "Light": true,
+                "Rifle": true,
+                "Precision": true,
+                "AMR": true
+            }
+        },
+        "Shell": {
+            "variants": {
+                "Shotgun": true
+            }
+        },
+        "Casing Form": {
+            "maxStack": 1,
+            "variants": {
+                "Light": true,
+                "Rifle": true,
+                "Precision": true,
+                "AMR": true
+            }
+        },
+        "Misc": {
+            "includeCategoryName": false,
+            "variants": {
+                "Magazine": true,
+                "Attachment Rail": true,
+                "Grip": true,
+                "Stock": true,
+                "Firearm Mechanism": true
+            }
+        }
+    }
+}

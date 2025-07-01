@@ -1,0 +1,19 @@
+
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "twkad:sprocket_form"
+    },
+    {
+      "amount": 15,
+      "fluid": "tconstruct:molten_iron",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "numismatics:sprocket"
+    }
+  ]
+}

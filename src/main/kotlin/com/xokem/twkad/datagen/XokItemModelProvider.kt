@@ -2,6 +2,8 @@ package com.xokem.twkad.datagen
 
 import com.xokem.twkad.CurrencyItem
 import com.xokem.twkad.XokMod
+import com.xokem.twkad.model.firearmComponentItems
+import com.xokem.twkad.model.metalComponentItems
 import net.minecraft.data.PackOutput
 import net.minecraftforge.client.model.generators.ItemModelProvider
 import net.minecraftforge.common.data.ExistingFileHelper
@@ -13,6 +15,14 @@ class XokItemModelProvider(output: PackOutput, existingFileHelper: ExistingFileH
         CurrencyItem.values().forEach {
             super.basicItem(it.blankItemHolder.get())
             super.basicItem(it.formItemHolder.get())
+        }
+
+        metalComponentItems.forEach {
+            super.basicItem(it.get())
+        }
+
+        firearmComponentItems.forEach {
+            super.basicItem(it.get())
         }
     }
 }

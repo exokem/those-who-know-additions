@@ -2,12 +2,15 @@ package com.xokem.twkad
 
 import com.xokem.twkad.datagen.XokItemModelProvider
 import com.xokem.twkad.datagen.XokLangProvider
-import net.minecraft.world.entity.Entity
-import net.minecraft.world.level.Level
+import com.xokem.twkad.datagen.generate
+import com.xokem.twkad.model.*
+import com.xokem.twkad.model.firearmCategories
+import com.xokem.twkad.model.metalComponentItems
+import net.minecraft.world.item.Item
 import net.minecraftforge.data.event.GatherDataEvent
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent
 import net.minecraftforge.fml.common.Mod
-import thedarkcolour.kotlinforforge.forge.FORGE_BUS
+import net.minecraftforge.registries.RegistryObject
 import thedarkcolour.kotlinforforge.forge.MOD_BUS
 
 @Mod(XokMod.ID)
@@ -44,9 +47,10 @@ object Initializer
         e.generator.addProvider(true, XokItemModelProvider(e.generator.packOutput, e.existingFileHelper))
         e.generator.addProvider(true, XokLangProvider(e.generator.packOutput, "en_us"))
         e.generator.addProvider(true, XokLangProvider(e.generator.packOutput, "en_uk"))
+        generate()
     }
 
-    internal fun onBuildCreativeTabContents(e: BuildCreativeModeTabContentsEvent)
+    private fun onBuildCreativeTabContents(e: BuildCreativeModeTabContentsEvent)
     {
         // Determine which VoltaicTab matches the event tab
         val tabDef = XokTab.values()
@@ -66,6 +70,14 @@ object Initializer
 
         CurrencyItem.values().forEach {
             indexItem(XokTab.Items, it.formItemHolder)
+        }
+
+        metalComponentItems.forEach {
+            indexItem(XokTab.Items, it)
+        }
+
+        firearmComponentItems.forEach {
+            indexItem(XokTab.Items, it)
         }
     }
 

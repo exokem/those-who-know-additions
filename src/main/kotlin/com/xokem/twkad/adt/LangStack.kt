@@ -31,5 +31,12 @@ abstract class LangStack(private val provider: LanguageProvider)
             provider.add(path, toLocalizedString(key))
     }
 
+    protected fun addInverse(name: String)
+    {
+        val path = stack.joinToString(".")
+        val key = name.replace(" ", "_").lowercase()
+        provider.add("$path.$key", name)
+    }
+
     abstract fun addEntries()
 }

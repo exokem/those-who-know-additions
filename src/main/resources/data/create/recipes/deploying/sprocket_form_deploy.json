@@ -1,0 +1,18 @@
+
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "item": "twkad:sprocket_blank"
+    }
+  ],
+  "keepHeldItem": true,
+  "results": [
+    {
+      "item": "twkad:sprocket_form"
+    }
+  ]
+}

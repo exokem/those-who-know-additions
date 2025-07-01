@@ -1,0 +1,19 @@
+
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "twkad:crown_form"
+    },
+    {
+      "amount": 25,
+      "fluid": "tconstruct:molten_gold",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "numismatics:crown"
+    }
+  ]
+}
