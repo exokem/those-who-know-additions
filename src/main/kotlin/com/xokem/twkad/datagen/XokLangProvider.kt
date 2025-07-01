@@ -33,6 +33,8 @@ class XokLangProvider(output: PackOutput, locale: String) : LanguageProvider(out
                             addInverse(if (data.includeCategoryName == false) it else "$it $component" )
                         }
                     }
+
+                    add("blazing_gunpowder")
                 }
             }
         }

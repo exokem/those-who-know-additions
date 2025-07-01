@@ -55,3 +55,7 @@ internal val metalComponentItems by lazy {
         }
     }
 }
+
+internal val blazingGunpowder by lazy {
+    registerItem("blazing_gunpowder")
+}

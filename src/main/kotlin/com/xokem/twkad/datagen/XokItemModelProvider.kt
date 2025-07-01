@@ -2,6 +2,7 @@ package com.xokem.twkad.datagen
 
 import com.xokem.twkad.CurrencyItem
 import com.xokem.twkad.XokMod
+import com.xokem.twkad.model.blazingGunpowder
 import com.xokem.twkad.model.firearmComponentItems
 import com.xokem.twkad.model.metalComponentItems
 import net.minecraft.data.PackOutput
@@ -24,5 +25,7 @@ class XokItemModelProvider(output: PackOutput, existingFileHelper: ExistingFileH
         firearmComponentItems.forEach {
             super.basicItem(it.get())
         }
+
+        super.basicItem(blazingGunpowder.get())
     }
 }

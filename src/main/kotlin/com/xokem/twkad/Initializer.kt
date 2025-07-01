@@ -79,6 +79,8 @@ object Initializer
         firearmComponentItems.forEach {
             indexItem(XokTab.Items, it)
         }
+
+        indexItem(XokTab.Items, blazingGunpowder)
     }
 
     private fun bindEvents()

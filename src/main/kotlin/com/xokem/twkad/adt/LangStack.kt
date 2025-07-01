@@ -21,6 +21,13 @@ abstract class LangStack(private val provider: LanguageProvider)
         stack.pop()
     }
 
+    protected fun addManual(key: String, name: String)
+    {
+        val path = stack.joinToString(".")
+
+        provider.add("$path.$key", name)
+    }
+
     protected fun add(key: String)
     {
         val path = stack.joinToString(".")
