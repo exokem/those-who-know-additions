@@ -81,6 +81,8 @@ object Initializer
         }
 
         indexItem(XokTab.Items, blazingGunpowder)
+        indexItem(XokTab.Items, incompleteFirearm)
+        indexItem(XokTab.Items, incompleteFirearmComponent)
     }
 
     private fun bindEvents()

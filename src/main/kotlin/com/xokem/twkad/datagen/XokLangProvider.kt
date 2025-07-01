@@ -35,6 +35,8 @@ class XokLangProvider(output: PackOutput, locale: String) : LanguageProvider(out
                     }
 
                     add("blazing_gunpowder")
+
+                    addManual("incomplete_firearm", "Incomplete Firearm")
                 }
             }
         }
