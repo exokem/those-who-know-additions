@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "voltaic:block/device/crate/bottom",
-    "side": "voltaic:block/device/crate/side",
-    "top": "voltaic:block/device/crate/top"
-  }
-}

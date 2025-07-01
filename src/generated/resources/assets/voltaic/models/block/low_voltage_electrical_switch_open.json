@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "voltaic:block/device/low_voltage_electrical_switch/open/bottom",
-    "side": "voltaic:block/device/low_voltage_electrical_switch/open/side",
-    "top": "voltaic:block/device/low_voltage_electrical_switch/open/top"
-  }
-}

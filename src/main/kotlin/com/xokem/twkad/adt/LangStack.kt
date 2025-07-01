@@ -1,0 +1,35 @@
+package com.xokem.twkad.adt
+
+import net.minecraftforge.common.data.LanguageProvider
+import java.util.*
+
+abstract class LangStack(private val provider: LanguageProvider)
+{
+    private val stack = Stack<String>()
+
+    private fun toLocalizedString(id: String): String
+    {
+        return id.split("_").map {
+            it.capitalize()
+        }.joinToString(" ")
+    }
+
+    protected fun push(key: String, action: () -> Unit)
+    {
+        stack.push(key)
+        action()
+        stack.pop()
+    }
+
+    protected fun add(key: String)
+    {
+        val path = stack.joinToString(".")
+
+        if (key.isNotEmpty())
+            provider.add("$path.$key", toLocalizedString(key))
+        else
+            provider.add(path, toLocalizedString(key))
+    }
+
+    abstract fun addEntries()
+}

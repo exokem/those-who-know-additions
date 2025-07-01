@@ -11,7 +11,7 @@ internal fun registerTabs() = XokTab.values().forEach {
 
 internal enum class XokTab(private val icon: String)
 {
-    Items("coal_coke"),
+    Items("bevel_blank"),
     ;
 
     val identifier = name.lowercase()

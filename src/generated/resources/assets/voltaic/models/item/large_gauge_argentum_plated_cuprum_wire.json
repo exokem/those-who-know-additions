@@ -1,8 +1,0 @@
-{
-  "parent": "voltaic:item/multipart_wire_size_6",
-  "textures": {
-    "type": "voltaic:block/multipart/wire/argentum_plated_cuprum/large",
-    "end": "voltaic:block/multipart/wire/argentum_plated_cuprum/large_side",
-    "particle": "voltaic:block/multipart/wire/argentum_plated_cuprum/large"
-  }
-}

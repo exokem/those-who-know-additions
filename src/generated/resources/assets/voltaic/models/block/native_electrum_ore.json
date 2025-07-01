@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "voltaic:block/ore/native_electrum_ore"
-  }
-}

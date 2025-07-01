@@ -1,8 +1,0 @@
-{
-  "parent": "voltaic:item/multipart_wire_size_4",
-  "textures": {
-    "type": "voltaic:block/multipart/wire/argentum/medium",
-    "end": "voltaic:block/multipart/wire/argentum/medium_side",
-    "particle": "voltaic:block/multipart/wire/argentum/medium"
-  }
-}

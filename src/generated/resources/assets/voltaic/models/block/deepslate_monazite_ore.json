@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "voltaic:block/ore/deepslate_monazite_ore"
-  }
-}
