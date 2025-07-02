@@ -2,6 +2,7 @@ package com.xokem.twkad
 
 import com.xokem.twkad.datagen.XokItemModelProvider
 import com.xokem.twkad.datagen.XokLangProvider
+import com.xokem.twkad.datagen.XokRecipeProvider
 import com.xokem.twkad.datagen.generate
 import com.xokem.twkad.model.*
 import com.xokem.twkad.model.firearmCategories
@@ -52,6 +53,7 @@ object Initializer
         e.generator.addProvider(true, XokItemModelProvider(e.generator.packOutput, e.existingFileHelper))
         e.generator.addProvider(true, XokLangProvider(e.generator.packOutput, "en_us"))
         e.generator.addProvider(true, XokLangProvider(e.generator.packOutput, "en_uk"))
+        e.generator.addProvider(true, XokRecipeProvider(e.generator.packOutput))
         generate()
     }
 
