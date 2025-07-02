@@ -1,0 +1,110 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "twkad:heavy_barrel"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "twkad:amr_receiver"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_amr_receiver"
+        },
+        {
+          "item": "twkad:gunmetal_double_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_amr_receiver"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_amr_receiver"
+        },
+        {
+          "item": "twkad:firearm_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_amr_receiver"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_amr_receiver"
+        },
+        {
+          "item": "create:precision_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_amr_receiver"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_amr_receiver"
+        },
+        {
+          "item": "create:polished_rose_quartz"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_amr_receiver"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_amr_receiver"
+        },
+        {
+          "item": "twkad:gunmetal_double_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_amr_receiver"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_amr_receiver"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_amr_receiver"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "twkad:incomplete_amr_receiver"
+  }
+}

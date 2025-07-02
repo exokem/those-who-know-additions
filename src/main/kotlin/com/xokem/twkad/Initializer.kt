@@ -202,6 +202,18 @@ object Initializer
             }
         }
 
+        firearmComponents["Receiver"]!!.variants?.forEach {
+            registerItem("incomplete_${it.key.lowercase()}_receiver") {
+                object : SequencedAssemblyItem(Item.Properties().stacksTo(1))
+                {
+                    override fun getName(pStack: ItemStack): Component
+                    {
+                        return Component.literal("Incomplete ${it.key} Receiver")
+                    }
+                }
+            }
+        }
+
         registerItem("incomplete_shotgun_shell") {
             object : SequencedAssemblyItem(Properties().stacksTo(1))
             {

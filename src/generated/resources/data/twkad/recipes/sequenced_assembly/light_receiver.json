@@ -1,0 +1,78 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "twkad:short_barrel"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "twkad:light_receiver"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_light_receiver"
+        },
+        {
+          "item": "twkad:gunmetal_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_light_receiver"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_light_receiver"
+        },
+        {
+          "item": "twkad:firearm_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_light_receiver"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_light_receiver"
+        },
+        {
+          "item": "twkad:gunmetal_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_light_receiver"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_light_receiver"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_light_receiver"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "twkad:incomplete_light_receiver"
+  }
+}

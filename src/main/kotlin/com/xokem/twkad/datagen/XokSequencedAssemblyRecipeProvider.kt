@@ -168,6 +168,117 @@ class XokSequencedAssemblyRecipeProvider(output: PackOutput?) : SequencedAssembl
                     it
                 }
         }
+
+        sequenced("light_receiver") { builder ->
+            builder.require(XokMod.getItem("short_barrel")).loops(1)
+                .transitionTo(XokMod.getItem("incomplete_light_receiver"))
+                .addOutput(XokMod.getItem("light_receiver"), 1.0F)
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("gunmetal_sheet"))
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("firearm_mechanism"))
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("gunmetal_sheet"))
+                }
+                .addStep(::PressingRecipe) {
+                    it
+                }
+        }
+
+        sequenced("rifle_receiver") { builder ->
+            builder.require(XokMod.getItem("carbine_barrel")).loops(1)
+                .transitionTo(XokMod.getItem("incomplete_rifle_receiver"))
+                .addOutput(XokMod.getItem("rifle_receiver"), 1.0F)
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("gunmetal_sheet"))
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("firearm_mechanism"))
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("firearm_mechanism"))
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("gunmetal_sheet"))
+                }
+                .addStep(::PressingRecipe) {
+                    it
+                }
+        }
+
+        sequenced("precision_receiver") { builder ->
+            builder.require(XokMod.getItem("rifle_barrel")).loops(1)
+                .transitionTo(XokMod.getItem("incomplete_precision_receiver"))
+                .addOutput(XokMod.getItem("precision_receiver"), 1.0F)
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("gunmetal_sheet"))
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("firearm_mechanism"))
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(AllItems.PRECISION_MECHANISM)
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(AllItems.POLISHED_ROSE_QUARTZ)
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("gunmetal_sheet"))
+                }
+                .addStep(::PressingRecipe) {
+                    it
+                }
+        }
+
+        sequenced("amr_receiver") { builder ->
+            builder.require(XokMod.getItem("heavy_barrel")).loops(1)
+                .transitionTo(XokMod.getItem("incomplete_amr_receiver"))
+                .addOutput(XokMod.getItem("amr_receiver"), 1.0F)
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("gunmetal_double_sheet"))
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("firearm_mechanism"))
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(AllItems.PRECISION_MECHANISM)
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(AllItems.POLISHED_ROSE_QUARTZ)
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("gunmetal_double_sheet"))
+                }
+                .addStep(::PressingRecipe) {
+                    it
+                }
+        }
+
+        sequenced("shotgun_receiver") { builder ->
+            builder.require(XokMod.getItem("double_barrel")).loops(1)
+                .transitionTo(XokMod.getItem("incomplete_shotgun_receiver"))
+                .addOutput(XokMod.getItem("shotgun_receiver"), 1.0F)
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("gunmetal_double_sheet"))
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("firearm_mechanism"))
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("firearm_mechanism"))
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(AllItems.POLISHED_ROSE_QUARTZ)
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("gunmetal_double_sheet"))
+                }
+                .addStep(::PressingRecipe) {
+                    it
+                }
+        }
     }
 
     fun sequenced(name: String, transform: UnaryOperator<SequencedAssemblyRecipeBuilder>) =
