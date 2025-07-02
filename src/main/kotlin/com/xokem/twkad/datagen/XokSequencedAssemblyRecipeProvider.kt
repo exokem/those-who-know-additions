@@ -5,6 +5,7 @@ import com.simibubi.create.api.data.recipe.SequencedAssemblyRecipeGen
 import com.simibubi.create.content.fluids.transfer.FillingRecipe
 import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe
 import com.simibubi.create.content.kinetics.press.PressingRecipe
+import com.simibubi.create.content.kinetics.saw.CuttingRecipe
 import com.simibubi.create.content.processing.recipe.ProcessingRecipe
 import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyRecipeBuilder
@@ -141,6 +142,24 @@ class XokSequencedAssemblyRecipeProvider(output: PackOutput?) : SequencedAssembl
                 .addOutput(XokMod.getItem("shotgun_shell"), 1.0F)
                 .addStep(::DeployerApplicationRecipe) {
                     it.require(blazingGunpowder.get())
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(XokMod.getItem("gunmetal_nugget"))
+                }
+                .addStep(::PressingRecipe) {
+                    it
+                }
+        }
+
+        sequenced("firearm_mechanism") { builder ->
+            builder.require(XokMod.getItem("gunmetal_double_sheet")).loops(4)
+                .transitionTo(XokMod.getItem("incomplete_firearm_mechanism"))
+                .addOutput(XokMod.getItem("firearm_mechanism"), 1.0F)
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(AllItems.POLISHED_ROSE_QUARTZ)
+                }
+                .addStep(::DeployerApplicationRecipe) {
+                    it.require(AllItems.BRASS_SHEET)
                 }
                 .addStep(::DeployerApplicationRecipe) {
                     it.require(XokMod.getItem("gunmetal_nugget"))

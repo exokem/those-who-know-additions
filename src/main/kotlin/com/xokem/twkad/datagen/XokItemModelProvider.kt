@@ -33,5 +33,6 @@ class XokItemModelProvider(output: PackOutput, existingFileHelper: ExistingFileH
         super.basicItem(incompleteFirearm.get())
         super.basicItem(incompleteFirearmComponent.get())
         super.basicItem(firearmSchematic.get())
+        basicItem(XokMod.getItem("incomplete_firearm_mechanism"))
     }
 }

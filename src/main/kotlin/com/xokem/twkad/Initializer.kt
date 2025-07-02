@@ -211,6 +211,16 @@ object Initializer
                 }
             }
         }
+
+        registerItem("incomplete_firearm_mechanism") {
+            object : SequencedAssemblyItem(Properties().stacksTo(1))
+            {
+                override fun getName(pStack: ItemStack): Component
+                {
+                    return Component.literal("Incomplete Firearm Mechanism")
+                }
+            }
+        }
     }
 
     private fun bindEvents()

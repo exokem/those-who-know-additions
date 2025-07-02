@@ -1,0 +1,78 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "twkad:gunmetal_double_sheet"
+  },
+  "loops": 4,
+  "results": [
+    {
+      "item": "twkad:firearm_mechanism"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_firearm_mechanism"
+        },
+        {
+          "item": "create:polished_rose_quartz"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_firearm_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_firearm_mechanism"
+        },
+        {
+          "item": "create:brass_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_firearm_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_firearm_mechanism"
+        },
+        {
+          "item": "twkad:gunmetal_nugget"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_firearm_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_firearm_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_firearm_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "twkad:incomplete_firearm_mechanism"
+  }
+}
