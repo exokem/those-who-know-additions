@@ -150,7 +150,7 @@ internal val incompleteFirearm by lazy {
 
 val defaultFirearmSchematicNbt by lazy {
     val tag = CompoundTag()
-    tag.putString("category", "")
+    tag.putString("category", "pistol")
     tag.putInt("selectedIndex", 0)
     return@lazy tag
 }

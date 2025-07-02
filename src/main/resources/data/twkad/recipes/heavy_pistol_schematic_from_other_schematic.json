@@ -1,0 +1,16 @@
+
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "twkad:firearm_schematic"
+        }
+    ],
+    "result": {
+        "type": "forge:nbt",
+        "item": "twkad:firearm_schematic",
+        "nbt": "{category:'heavy_pistol',selectedIndex:0}"
+    },
+    "show_notification": true
+}

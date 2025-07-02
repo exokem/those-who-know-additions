@@ -1,6 +1,8 @@
 package com.xokem.twkad.datagen
 
 import com.xokem.twkad.CurrencyItem
+import com.xokem.twkad.model.firearmCategories
+import com.xokem.twkad.model.firearmComponents
 import java.io.BufferedWriter
 import java.io.File
 import java.io.FileWriter
@@ -50,6 +52,24 @@ const val deployTemplate = """
 }
 """
 
+val schematicExchangeTemplate = """
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "twkad:firearm_schematic"
+        }
+    ],
+    "result": {
+        "type": "forge:nbt",
+        "item": "twkad:firearm_schematic",
+        "nbt": "{category:'@OUTPUT_CATEGORY',selectedIndex:0}"
+    },
+    "show_notification": true
+}
+"""
+
 private fun write(content: String, file: String, vararg path: String)
 {
     Files.createDirectories(Path.of(outputPath, *path))
@@ -82,6 +102,14 @@ internal fun generate()
             .replace("@HELD", "twkad:${it.blankId}")
             .replace("@OUTPUT", "twkad:${it.formId}"),
             "${it.id}_form_deploy.json", "create/recipes/deploying",
+        )
+    }
+
+    firearmCategories.entries.forEach { (outputName, outputCategory) ->
+        // crafting category from each other category
+        write(schematicExchangeTemplate
+            .replace("@OUTPUT_CATEGORY", outputName),
+            "${outputName}_schematic_from_other_schematic.json", "twkad/recipes"
         )
     }
 }
