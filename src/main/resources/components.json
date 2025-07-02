@@ -65,10 +65,6 @@
         "Misc": {
             "includeCategoryName": false,
             "variants": {
-                "Magazine": true,
-                "Attachment Rail": true,
-                "Grip": true,
-                "Stock": true,
                 "Firearm Mechanism": true
             }
         }
