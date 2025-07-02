@@ -10,14 +10,11 @@ import net.minecraft.ChatFormatting
 import net.minecraft.client.gui.screens.Screen
 import net.minecraft.nbt.CompoundTag
 import net.minecraft.network.chat.Component
-import net.minecraft.network.chat.MutableComponent
-import net.minecraft.world.item.Item
 import net.minecraft.world.item.ItemStack
 import net.minecraftforge.data.event.GatherDataEvent
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent
 import net.minecraftforge.event.entity.player.ItemTooltipEvent
 import net.minecraftforge.fml.common.Mod
-import net.minecraftforge.registries.RegistryObject
 import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 import thedarkcolour.kotlinforforge.forge.MOD_BUS
 
@@ -182,9 +179,6 @@ object Initializer
         incompleteFirearm.isPresent
         incompleteFirearmComponent.isPresent
         firearmSchematic.isPresent
-//        indexItem(XokTab.Items, incompleteFirearm)
-//        indexItem(XokTab.Items, incompleteFirearmComponent)
-//        indexItem(XokTab.Items, firearmSchematic)
     }
 
     private fun bindEvents()

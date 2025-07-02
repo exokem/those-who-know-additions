@@ -2,9 +2,8 @@ package com.xokem.twkad.model
 
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem
 import com.xokem.twkad.registerItem
-import kotlinx.serialization.*
-import kotlinx.serialization.json.*
-import net.minecraft.ChatFormatting
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.json.Json
 import net.minecraft.nbt.CompoundTag
 import net.minecraft.network.chat.Component
 import net.minecraft.world.InteractionHand
@@ -12,7 +11,6 @@ import net.minecraft.world.InteractionResultHolder
 import net.minecraft.world.entity.player.Player
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.ItemStack
-import net.minecraft.world.item.TooltipFlag
 import net.minecraft.world.level.Level
 import java.io.InputStreamReader
 
