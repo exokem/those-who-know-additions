@@ -6,11 +6,19 @@ import com.xokem.twkad.datagen.generate
 import com.xokem.twkad.model.*
 import com.xokem.twkad.model.firearmCategories
 import com.xokem.twkad.model.metalComponentItems
+import net.minecraft.ChatFormatting
+import net.minecraft.client.gui.screens.Screen
+import net.minecraft.nbt.CompoundTag
+import net.minecraft.network.chat.Component
+import net.minecraft.network.chat.MutableComponent
 import net.minecraft.world.item.Item
+import net.minecraft.world.item.ItemStack
 import net.minecraftforge.data.event.GatherDataEvent
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent
+import net.minecraftforge.event.entity.player.ItemTooltipEvent
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.registries.RegistryObject
+import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 import thedarkcolour.kotlinforforge.forge.MOD_BUS
 
 @Mod(XokMod.ID)
@@ -60,6 +68,95 @@ object Initializer
         Registry.TabItems[tabDef].forEach {
             e.accept(it.get())
         }
+
+        firearmCategories.entries.forEach {
+            val tag = CompoundTag()
+            tag.putString("category", it.key)
+            tag.putInt("selectedIndex", 0)
+            val stack = ItemStack(firearmSchematic.get())
+            stack.tag = tag
+            e.accept(stack)
+        }
+    }
+
+    private fun onEvaluateItemTooltip(e: ItemTooltipEvent)
+    {
+        val stack = e.itemStack
+
+        if (stack.`is`(incompleteFirearm.get()))
+        {
+            val nbt = resolveNBT(stack, defaultIncompleteFirearmNbt)
+
+            val categoryName = nbt.getString("category")
+            val index = nbt.getInt("selectedIndex")
+
+            if (categoryName === "")
+            {
+                return
+            }
+
+            val category = firearmCategories[categoryName] ?: return
+            val entry = category.entries[index]
+
+            e.toolTip.add(Component.literal(entry.name).withStyle(ChatFormatting.GRAY))
+        }
+        else if (stack.`is`(firearmSchematic.get()))
+        {
+            val nbt = resolveNBT(stack, defaultFirearmSchematicNbt)
+
+            val categoryName = nbt.getString("category")
+
+            if (categoryName == "")
+            {
+                return
+            }
+
+            val index = nbt.getInt("selectedIndex")
+
+            val category = firearmCategories[categoryName] ?: return
+            val entry = category.entries[index]
+
+            val current = entry.name
+
+            e.toolTip.add(Component.literal(entry.name).withStyle(ChatFormatting.GRAY))
+
+            if (Screen.hasShiftDown())
+            {
+                e.toolTip.add(
+                    Component
+                        .literal("Hold [").withStyle(ChatFormatting.DARK_GRAY)
+                        .append(
+                            Component.literal("Shift").withStyle(ChatFormatting.WHITE)
+                        )
+                        .append(
+                            Component.literal("] to view configurations").withStyle(ChatFormatting.DARK_GRAY)
+                        )
+                )
+
+                category.entries.forEach {
+                    e.toolTip.add(
+                        if (it.name == current)
+                            Component.literal("> ${it.name}").withStyle(ChatFormatting.GRAY)
+                        else
+                            Component.literal("> ${it.name}").withStyle(ChatFormatting.DARK_GRAY)
+                    )
+                }
+            }
+
+            else
+            {
+                e.toolTip.add(
+                    Component
+                        .literal("Hold [").withStyle(ChatFormatting.DARK_GRAY)
+                        .append(
+                            Component.literal("Shift").withStyle(ChatFormatting.GRAY)
+                        )
+                        .append(
+                            Component.literal("] to view configurations").withStyle(ChatFormatting.DARK_GRAY)
+                        )
+                )
+            }
+        }
     }
 
     private fun registerContent()
@@ -81,8 +178,13 @@ object Initializer
         }
 
         indexItem(XokTab.Items, blazingGunpowder)
-        indexItem(XokTab.Items, incompleteFirearm)
-        indexItem(XokTab.Items, incompleteFirearmComponent)
+
+        incompleteFirearm.isPresent
+        incompleteFirearmComponent.isPresent
+        firearmSchematic.isPresent
+//        indexItem(XokTab.Items, incompleteFirearm)
+//        indexItem(XokTab.Items, incompleteFirearmComponent)
+//        indexItem(XokTab.Items, firearmSchematic)
     }
 
     private fun bindEvents()
@@ -108,7 +210,7 @@ object Initializer
 //        FORGE_BUS.addListener(::onLevelTick)
 //        FORGE_BUS.addListener(::onPlayerTick)
 //
-//        FORGE_BUS.addListener(::onEvaluateItemTooltip)
+        FORGE_BUS.addListener(::onEvaluateItemTooltip)
 //
 //        FORGE_BUS.addListener(::onRegisterCapabilities)
 //        FORGE_BUS.addGenericListener(Level::class.java, ::onAttachLevelCapabilities)

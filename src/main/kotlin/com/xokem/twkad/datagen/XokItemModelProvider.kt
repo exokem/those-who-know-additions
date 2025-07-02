@@ -32,5 +32,6 @@ class XokItemModelProvider(output: PackOutput, existingFileHelper: ExistingFileH
         super.basicItem(blazingGunpowder.get())
         super.basicItem(incompleteFirearm.get())
         super.basicItem(incompleteFirearmComponent.get())
+        super.basicItem(firearmSchematic.get())
     }
 }

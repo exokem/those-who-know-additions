@@ -4,13 +4,16 @@ import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem
 import com.xokem.twkad.registerItem
 import kotlinx.serialization.*
 import kotlinx.serialization.json.*
+import net.minecraft.ChatFormatting
 import net.minecraft.nbt.CompoundTag
 import net.minecraft.network.chat.Component
-import net.minecraft.network.chat.MutableComponent
-import net.minecraft.network.chat.contents.LiteralContents
+import net.minecraft.world.InteractionHand
+import net.minecraft.world.InteractionResultHolder
+import net.minecraft.world.entity.player.Player
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.ItemStack
-import java.awt.event.ComponentEvent
+import net.minecraft.world.item.TooltipFlag
+import net.minecraft.world.level.Level
 import java.io.InputStreamReader
 
 @Serializable
@@ -129,7 +132,6 @@ internal val incompleteFirearm by lazy {
         {
             override fun getName(stack: ItemStack): Component
             {
-//                val stack = player.getItemInHand(hand)
                 val nbt = resolveNBT(stack, defaultIncompleteFirearmNbt)
                 val categoryName = nbt.getString("category")
 
@@ -144,11 +146,95 @@ internal val incompleteFirearm by lazy {
 
                 return Component.literal("Incomplete ${category.name}")
             }
+        }
+    }
+}
 
-//            override fun use(level: Level, player: Player, hand: InteractionHand): InteractionResultHolder<ItemStack>
-//            {
-//
-//            }
+val defaultFirearmSchematicNbt by lazy {
+    val tag = CompoundTag()
+    tag.putString("category", "")
+    tag.putInt("selectedIndex", 0)
+    return@lazy tag
+}
+
+internal val firearmSchematic by lazy {
+    registerItem("firearm_schematic") {
+        object : Item(Properties().stacksTo(1))
+        {
+            override fun getName(stack: ItemStack): Component
+            {
+                val nbt = resolveNBT(stack, defaultFirearmSchematicNbt)
+                val categoryName = nbt.getString("category")
+
+                if (categoryName == "")
+                {
+                    return Component.literal("Firearm Schematic")
+                }
+
+                val category = firearmCategories[categoryName] ?: return Component.literal("Firearm Schematic")
+
+                stack.tag = nbt
+
+                return Component.literal("${category.name} Schematic")
+            }
+
+            val defaultVariantNbt by lazy {
+                val tag = CompoundTag()
+                tag.putInt("selectedIndex", 0)
+                return@lazy tag
+            }
+
+            fun cycleVariant(stack: ItemStack, variants: List<Any>, increment: Boolean): Int
+            {
+                val nbt = resolveNBT(stack, defaultVariantNbt)
+                var index = nbt.getInt("selectedIndex")
+
+                if (increment)
+                    index += 1
+                else
+                    index -= 1
+
+                if (index < 0)
+                    index = variants.size - 1
+                else if (variants.size <= index)
+                    index = 0
+
+                nbt.putInt("selectedIndex", index)
+
+                stack.tag = nbt
+
+                return index
+            }
+
+            override fun use(level: Level, player: Player, hand: InteractionHand): InteractionResultHolder<ItemStack>
+            {
+                if (level.isClientSide())
+                    return InteractionResultHolder.fail(player.getItemInHand(hand))
+
+                val stack = player.getItemInHand(hand)
+
+                val nbt = resolveNBT(stack, defaultFirearmSchematicNbt)
+                val categoryName = nbt.getString("category")
+
+                if (categoryName == "")
+                {
+                    return InteractionResultHolder.fail(stack)
+                }
+
+                val index = nbt.getInt("selectedIndex")
+
+                val category = firearmCategories[categoryName] ?: return InteractionResultHolder.fail(stack)
+
+                val variants = category.entries
+
+                stack.tag = nbt
+
+                val nextIndex = cycleVariant(stack, variants, !player.isCrouching)
+
+                player.displayClientMessage(Component.literal("${variants[nextIndex].name} Schematic"), true)
+
+                return InteractionResultHolder.fail(stack)
+            }
         }
     }
 }
