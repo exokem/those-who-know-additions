@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "twkad:gunmetal_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "twkad:gunmetal_sheet"
+    }
+  ]
+}

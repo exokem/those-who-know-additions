@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:blaze_rod"
+    },
+    {
+      "amount": 90,
+      "fluid": "tconstruct:molten_steel",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "twkad:rifle_barrel"
+    }
+  ]
+}

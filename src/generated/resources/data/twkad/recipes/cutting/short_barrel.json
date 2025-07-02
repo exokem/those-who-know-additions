@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "twkad:rifle_barrel"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "item": "twkad:short_barrel"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "twkad:rifle_barrel"
+    },
+    {
+      "item": "twkad:rifle_barrel"
+    }
+  ],
+  "results": [
+    {
+      "item": "twkad:double_barrel"
+    }
+  ]
+}

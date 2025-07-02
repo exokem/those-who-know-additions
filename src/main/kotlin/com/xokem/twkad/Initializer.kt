@@ -54,6 +54,10 @@ object Initializer
         e.generator.addProvider(true, XokRecipeProvider(e.generator.packOutput))
         e.generator.addProvider(true, XokFillingRecipeProvider(e.generator.packOutput))
         e.generator.addProvider(true, XokDeployingRecipeProvider(e.generator.packOutput))
+        e.generator.addProvider(true, XokSequencedAssemblyRecipeProvider(e.generator.packOutput))
+        e.generator.addProvider(true, XokPressingRecipeProvider(e.generator.packOutput))
+        e.generator.addProvider(true, XokCuttingRecipeProvider(e.generator.packOutput))
+        e.generator.addProvider(true, XokCompactingRecipeProvider(e.generator.packOutput))
         generate()
     }
 
@@ -181,6 +185,8 @@ object Initializer
         incompleteFirearm.isPresent
         incompleteFirearmComponent.isPresent
         firearmSchematic.isPresent
+        incompleteGunmetalIngot.isPresent
+        incompleteGunmetalDoubleSheet.isPresent
     }
 
     private fun bindEvents()

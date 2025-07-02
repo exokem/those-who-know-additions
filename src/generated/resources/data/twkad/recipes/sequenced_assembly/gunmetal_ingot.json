@@ -1,0 +1,96 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:iron_sheet"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "twkad:gunmetal_ingot"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_gunmetal_ingot"
+        },
+        {
+          "item": "minecraft:gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_gunmetal_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_gunmetal_ingot"
+        },
+        {
+          "item": "create:powdered_obsidian"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_gunmetal_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_gunmetal_ingot"
+        },
+        {
+          "amount": 30,
+          "fluid": "tconstruct:molten_steel",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_gunmetal_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_gunmetal_ingot"
+        },
+        {
+          "item": "create:iron_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_gunmetal_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_gunmetal_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_gunmetal_ingot"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "twkad:incomplete_gunmetal_ingot"
+  }
+}

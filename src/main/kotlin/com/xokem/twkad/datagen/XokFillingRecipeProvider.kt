@@ -40,6 +40,18 @@ class XokFillingRecipeProvider(output: PackOutput?) : FillingRecipeGen(output, X
                 .require(XokMod.getItem("amr_casing_form"))
                 .output(XokMod.getItem("amr_casing"))
         }
+
+        filling("rifle_barrel") {
+            it.require(TinkerFluids.moltenSteel.get(), 90)
+                .require(Items.BLAZE_ROD)
+                .output(XokMod.getItem("rifle_barrel"))
+        }
+
+        filling("heavy_barrel") {
+            it.require(TinkerFluids.moltenSteel.get(), 180)
+                .require(XokMod.getItem("rifle_barrel"))
+                .output(XokMod.getItem("heavy_barrel"))
+        }
     }
 
     fun filling(name: String, transform: UnaryOperator<ProcessingRecipeBuilder<ProcessingRecipe<*>>>) =

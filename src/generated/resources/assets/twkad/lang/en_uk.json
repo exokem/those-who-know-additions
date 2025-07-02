@@ -3,7 +3,6 @@
   "item.twkad.amr_casing": "AMR Casing",
   "item.twkad.amr_casing_form": "AMR Casing Form",
   "item.twkad.amr_receiver": "AMR Receiver",
-  "item.twkad.attachment_rail": "Attachment Rail",
   "item.twkad.bevel_blank": "Bevel Blank",
   "item.twkad.bevel_form": "Bevel Form",
   "item.twkad.blazing_gunpowder": "Blazing Gunpowder",
@@ -14,7 +13,6 @@
   "item.twkad.crown_form": "Crown Form",
   "item.twkad.double_barrel": "Double Barrel",
   "item.twkad.firearm_mechanism": "Firearm Mechanism",
-  "item.twkad.grip": "Grip",
   "item.twkad.gunmetal_double_sheet": "Gunmetal Double Sheet",
   "item.twkad.gunmetal_ingot": "Gunmetal Ingot",
   "item.twkad.gunmetal_nugget": "Gunmetal Nugget",
@@ -25,7 +23,6 @@
   "item.twkad.light_casing": "Light Casing",
   "item.twkad.light_casing_form": "Light Casing Form",
   "item.twkad.light_receiver": "Light Receiver",
-  "item.twkad.magazine": "Magazine",
   "item.twkad.precision_cartridge": "Precision Cartridge",
   "item.twkad.precision_casing": "Precision Casing",
   "item.twkad.precision_casing_form": "Precision Casing Form",
@@ -42,7 +39,6 @@
   "item.twkad.sprocket_form": "Sprocket Form",
   "item.twkad.spur_blank": "Spur Blank",
   "item.twkad.spur_form": "Spur Form",
-  "item.twkad.stock": "Stock",
   "item.twkad.sun_blank": "Sun Blank",
   "item.twkad.sun_form": "Sun Form"
 }

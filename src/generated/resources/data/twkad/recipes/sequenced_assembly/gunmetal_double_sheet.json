@@ -1,0 +1,96 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "twkad:gunmetal_sheet"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "twkad:gunmetal_double_sheet"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_gunmetal_double_sheet"
+        },
+        {
+          "item": "minecraft:gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_gunmetal_double_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_gunmetal_double_sheet"
+        },
+        {
+          "item": "create:powdered_obsidian"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_gunmetal_double_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_gunmetal_double_sheet"
+        },
+        {
+          "amount": 30,
+          "fluid": "tconstruct:molten_steel",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_gunmetal_double_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_gunmetal_double_sheet"
+        },
+        {
+          "item": "twkad:gunmetal_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_gunmetal_double_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_gunmetal_double_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_gunmetal_double_sheet"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "twkad:incomplete_gunmetal_double_sheet"
+  }
+}

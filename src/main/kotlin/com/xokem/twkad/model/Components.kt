@@ -148,6 +148,30 @@ internal val incompleteFirearm by lazy {
     }
 }
 
+internal val incompleteGunmetalIngot by lazy {
+    registerItem("incomplete_gunmetal_ingot") {
+        object : SequencedAssemblyItem(Properties().stacksTo(1))
+        {
+            override fun getName(pStack: ItemStack): Component
+            {
+                return Component.literal("Incomplete Gunmetal Ingot")
+            }
+        }
+    }
+}
+
+internal val incompleteGunmetalDoubleSheet by lazy {
+    registerItem("incomplete_gunmetal_double_sheet") {
+        object : SequencedAssemblyItem(Properties().stacksTo(1))
+        {
+            override fun getName(pStack: ItemStack): Component
+            {
+                return Component.literal("Incomplete Gunmetal Double Sheet")
+            }
+        }
+    }
+}
+
 val defaultFirearmSchematicNbt by lazy {
     val tag = CompoundTag()
     tag.putString("category", "pistol")

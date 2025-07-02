@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "twkad:gunmetal_ingot"
+    }
+  ],
+  "results": [
+    {
+      "count": 9,
+      "item": "twkad:gunmetal_nugget"
+    }
+  ]
+}
