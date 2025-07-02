@@ -45,6 +45,9 @@ object XokMod
     fun getItem(identifier: String) =
         ForgeRegistries.ITEMS.getValue(resource(identifier))!!
 
+    fun getAnyItem(scopedIdentifier: String) =
+        ForgeRegistries.ITEMS.getValue(ResourceLocation(scopedIdentifier))
+
     fun getBlock(identifier: String) =
         ForgeRegistries.BLOCKS.getValue(resource(identifier))!!
 

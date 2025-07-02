@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "twkad:rifle_casing_form"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "keepHeldItem": true,
+  "results": [
+    {
+      "item": "twkad:precision_casing_form"
+    }
+  ]
+}

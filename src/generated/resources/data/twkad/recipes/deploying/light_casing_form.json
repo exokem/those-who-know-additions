@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "keepHeldItem": true,
+  "results": [
+    {
+      "item": "twkad:light_casing_form"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "twkad:light_casing_form"
+    },
+    {
+      "amount": 4,
+      "fluid": "tconstruct:molten_brass",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "twkad:light_casing"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "twkad:precision_casing_form"
+    },
+    {
+      "amount": 24,
+      "fluid": "tconstruct:molten_brass",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "twkad:precision_casing"
+    }
+  ]
+}
