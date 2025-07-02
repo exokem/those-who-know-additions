@@ -1,5 +1,6 @@
 package com.xokem.twkad
 
+import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem
 import com.xokem.twkad.datagen.*
 import com.xokem.twkad.datagen.generate
 import com.xokem.twkad.model.*
@@ -9,6 +10,7 @@ import net.minecraft.ChatFormatting
 import net.minecraft.client.gui.screens.Screen
 import net.minecraft.nbt.CompoundTag
 import net.minecraft.network.chat.Component
+import net.minecraft.world.item.Item
 import net.minecraft.world.item.ItemStack
 import net.minecraftforge.data.event.GatherDataEvent
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent
@@ -187,6 +189,28 @@ object Initializer
         firearmSchematic.isPresent
         incompleteGunmetalIngot.isPresent
         incompleteGunmetalDoubleSheet.isPresent
+
+        firearmComponents["Cartridge"]!!.variants?.forEach {
+            registerItem("incomplete_${it.key.lowercase()}_cartridge") {
+                object : SequencedAssemblyItem(Item.Properties().stacksTo(1))
+                {
+                    override fun getName(pStack: ItemStack): Component
+                    {
+                        return Component.literal("Incomplete ${it.key} Cartridge")
+                    }
+                }
+            }
+        }
+
+        registerItem("incomplete_shotgun_shell") {
+            object : SequencedAssemblyItem(Properties().stacksTo(1))
+            {
+                override fun getName(pStack: ItemStack): Component
+                {
+                    return Component.literal("Incomplete Shotgun Shell")
+                }
+            }
+        }
     }
 
     private fun bindEvents()

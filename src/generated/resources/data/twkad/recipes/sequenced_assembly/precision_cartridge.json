@@ -1,0 +1,105 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "twkad:precision_casing"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "twkad:precision_cartridge"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        [],
+        {
+          "item": "twkad:blazing_gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "count": 0,
+          "item": "minecraft:air"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        [],
+        {
+          "item": "twkad:blazing_gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "count": 0,
+          "item": "minecraft:air"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        [],
+        {
+          "item": "twkad:blazing_gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "count": 0,
+          "item": "minecraft:air"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        [],
+        {
+          "item": "twkad:blazing_gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "count": 0,
+          "item": "minecraft:air"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        [],
+        {
+          "item": "twkad:gunmetal_nugget"
+        }
+      ],
+      "results": [
+        {
+          "count": 0,
+          "item": "minecraft:air"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        []
+      ],
+      "results": [
+        {
+          "count": 0,
+          "item": "minecraft:air"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "count": 0,
+    "item": "minecraft:air"
+  }
+}

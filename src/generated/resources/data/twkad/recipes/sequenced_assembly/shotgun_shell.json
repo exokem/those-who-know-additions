@@ -1,0 +1,62 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "twkad:light_casing"
+  },
+  "loops": 5,
+  "results": [
+    {
+      "item": "twkad:shotgun_shell"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_shotgun_shell"
+        },
+        {
+          "item": "twkad:blazing_gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_shotgun_shell"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_shotgun_shell"
+        },
+        {
+          "item": "twkad:gunmetal_nugget"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_shotgun_shell"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_shotgun_shell"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_shotgun_shell"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "twkad:incomplete_shotgun_shell"
+  }
+}

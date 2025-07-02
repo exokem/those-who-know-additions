@@ -1,0 +1,60 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "twkad:amr_casing"
+  },
+  "loops": 8,
+  "results": [
+    {
+      "item": "twkad:amr_cartridge"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        [],
+        {
+          "item": "twkad:blazing_gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "count": 0,
+          "item": "minecraft:air"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        [],
+        {
+          "item": "twkad:gunmetal_nugget"
+        }
+      ],
+      "results": [
+        {
+          "count": 0,
+          "item": "minecraft:air"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        []
+      ],
+      "results": [
+        {
+          "count": 0,
+          "item": "minecraft:air"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "count": 0,
+    "item": "minecraft:air"
+  }
+}
