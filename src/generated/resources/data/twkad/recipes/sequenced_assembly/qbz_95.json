@@ -6,8 +6,11 @@
   "loops": 1,
   "results": [
     {
-      "count": 0,
-      "item": "minecraft:air"
+      "item": "tacz:modern_kinetic_gun",
+      "nbt": {
+        "GunFireMode": "AUTO",
+        "GunId": "tacz:qbz_95"
+      }
     }
   ],
   "sequence": [
