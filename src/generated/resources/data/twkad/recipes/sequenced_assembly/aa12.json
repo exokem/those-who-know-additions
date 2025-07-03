@@ -1,0 +1,90 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "twkad:blazing_gunpowder"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "count": 0,
+      "item": "minecraft:air"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_firearm"
+        },
+        {
+          "type": "forge:nbt",
+          "count": 1,
+          "item": "twkad:firearm_schematic",
+          "nbt": "{category:\"shotgun\",selectedIndex:0}"
+        }
+      ],
+      "keepHeldItem": true,
+      "results": [
+        {
+          "item": "twkad:incomplete_firearm"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_firearm"
+        },
+        {
+          "item": "twkad:shotgun_receiver"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_firearm"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_firearm"
+        },
+        {
+          "item": "twkad:double_barrel"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_firearm"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "twkad:incomplete_firearm"
+        },
+        {
+          "item": "twkad:gunmetal_double_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "twkad:incomplete_firearm"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "twkad:incomplete_firearm",
+    "nbt": {
+      "category": "shotgun",
+      "selectedIndex": 0
+    }
+  }
+}
