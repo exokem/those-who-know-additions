@@ -6,7 +6,8 @@
   "loops": 1,
   "results": [
     {
-      "item": "twkad:rifle_cartridge"
+      "count": 1,
+      "item": "tacz:rifle_cartridge"
     }
   ],
   "sequence": [

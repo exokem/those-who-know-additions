@@ -147,7 +147,7 @@ class XokSequencedAssemblyRecipeProvider(output: PackOutput?) : SequencedAssembl
         sequenced("light_cartridge") { builder ->
             builder.require(XokMod.getItem("light_casing")).loops(1)
                 .transitionTo(XokMod.getItem("incomplete_light_casing"))
-                .addOutput(XokMod.getItem("light_cartridge"), 1.0F)
+                .addOutput(XokMod.getAnyItem("tacz:light_cartridge"), 1.0F)
                 .addStep(::DeployerApplicationRecipe) {
                     it.require(blazingGunpowder.get())
                 }
@@ -162,7 +162,7 @@ class XokSequencedAssemblyRecipeProvider(output: PackOutput?) : SequencedAssembl
         sequenced("rifle_cartridge") { builder ->
             builder.require(XokMod.getItem("rifle_casing")).loops(1)
                 .transitionTo(XokMod.getItem("incomplete_rifle_casing"))
-                .addOutput(XokMod.getItem("rifle_cartridge"), 1.0F)
+                .addOutput(XokMod.getAnyItem("tacz:rifle_cartridge"), 1.0F)
                 .addStep(::DeployerApplicationRecipe) {
                     it.require(blazingGunpowder.get())
                 }
@@ -180,7 +180,7 @@ class XokSequencedAssemblyRecipeProvider(output: PackOutput?) : SequencedAssembl
         sequenced("precision_cartridge") { builder ->
             builder.require(XokMod.getItem("precision_casing")).loops(1)
                 .transitionTo(XokMod.getItem("incomplete_precision_casing"))
-                .addOutput(XokMod.getItem("precision_cartridge"), 1.0F)
+                .addOutput(XokMod.getAnyItem("tacz:precision_cartridge"), 1.0F)
                 .addStep(::DeployerApplicationRecipe) {
                     it.require(blazingGunpowder.get())
                 }
@@ -204,7 +204,7 @@ class XokSequencedAssemblyRecipeProvider(output: PackOutput?) : SequencedAssembl
         sequenced("amr_cartridge") { builder ->
             builder.require(XokMod.getItem("amr_casing")).loops(8)
                 .transitionTo(XokMod.getItem("incomplete_amr_casing"))
-                .addOutput(XokMod.getItem("amr_cartridge"), 1.0F)
+                .addOutput(XokMod.getAnyItem("tacz:amr_cartridge"), 1.0F)
                 .addStep(::DeployerApplicationRecipe) {
                     it.require(blazingGunpowder.get())
                 }
@@ -219,7 +219,7 @@ class XokSequencedAssemblyRecipeProvider(output: PackOutput?) : SequencedAssembl
         sequenced("shotgun_shell") { builder ->
             builder.require(XokMod.getItem("light_casing")).loops(5)
                 .transitionTo(XokMod.getItem("incomplete_shotgun_shell"))
-                .addOutput(XokMod.getItem("shotgun_shell"), 1.0F)
+                .addOutput(XokMod.getAnyItem("tacz:shotgun_shell"), 1.0F)
                 .addStep(::DeployerApplicationRecipe) {
                     it.require(blazingGunpowder.get())
                 }

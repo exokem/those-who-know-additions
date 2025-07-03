@@ -6,7 +6,8 @@
   "loops": 5,
   "results": [
     {
-      "item": "twkad:shotgun_shell"
+      "count": 1,
+      "item": "tacz:shotgun_shell"
     }
   ],
   "sequence": [

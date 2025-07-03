@@ -43,6 +43,8 @@ internal val metalComponents get() = data.metal
 
 internal val firearmComponentItems by lazy {
     firearmComponents.entries.flatMap {entry ->
+        if (entry.key == "Cartridge")
+            return@flatMap listOf()
         val component = entry.key
         val data = entry.value
         val props = Item.Properties().stacksTo(data.maxStack ?: 64)
