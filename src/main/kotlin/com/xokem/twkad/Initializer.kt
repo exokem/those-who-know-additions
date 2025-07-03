@@ -60,6 +60,7 @@ object Initializer
         e.generator.addProvider(true, XokPressingRecipeProvider(e.generator.packOutput))
         e.generator.addProvider(true, XokCuttingRecipeProvider(e.generator.packOutput))
         e.generator.addProvider(true, XokCompactingRecipeProvider(e.generator.packOutput))
+        e.generator.addProvider(true, XokMixingRecipeProvider(e.generator.packOutput))
         generate()
     }
 

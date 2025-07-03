@@ -176,6 +176,14 @@ dependencies {
     implementation fg.deobf("slimeknights.mantle:Mantle:${minecraft_version}-${mantle_build}")
     implementation fg.deobf("slimeknights.tconstruct:TConstruct:${minecraft_version}-${tinkers_build}")
     implementation fg.deobf("curse.maven:timeless-and-classics-zero-1028108:6632240-sources-6633203")
+
+    implementation fg.deobf("mekanism:Mekanism:${mekanism_version}:api")
+
+    // If you want to test/use Mekanism & its modules during `runClient` invocation, use the following
+    implementation fg.deobf("mekanism:Mekanism:${mekanism_version}")// core
+    runtimeOnly fg.deobf("mekanism:Mekanism:${mekanism_version}:additions")// Mekanism: Additions
+    runtimeOnly fg.deobf("mekanism:Mekanism:${mekanism_version}:generators")// Mekanism: Generators
+    runtimeOnly fg.deobf("mekanism:Mekanism:${mekanism_version}:tools")// Mekanism: Tools
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
