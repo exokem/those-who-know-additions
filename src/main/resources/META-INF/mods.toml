@@ -10,6 +10,8 @@ authors="xokem"
 description='''
 sample text
 '''
+[[mixins]]
+config="mixins.twkad.json"
 [[dependencies.twkad]]
 modId="forge"
 mandatory=true

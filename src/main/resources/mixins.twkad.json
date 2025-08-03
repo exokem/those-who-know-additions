@@ -1,0 +1,16 @@
+{
+    "required": true,
+    "package": "com.xokem.twkad.mixins",
+    "compatibilityLevel": "JAVA_17",
+    "refmap": "mixins.twkad.refmap.json",
+    "mixins": [
+        "BaseSpawnerMixin",
+        "BaseSpawnerAccessor"
+    ],
+    "client": [
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    },
+    "minVersion": "0.8"
+}

@@ -7,7 +7,7 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version "${kotlinVersion}"
     id 'org.jetbrains.kotlin.plugin.serialization' version "${kotlinVersion}"
 
-//    id 'org.spongepowered.mixin' version '0.7.+'
+    id 'org.spongepowered.mixin' version '0.7.+'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
 }
 
@@ -155,7 +155,7 @@ dependencies {
 
     implementation "thedarkcolour:kotlinforforge:$kff_version"
 
-//    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jeiVersion}")
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jeiVersion}")
@@ -230,6 +230,10 @@ jar {
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+    options.compilerArgs += [
+        "-AreobfSrgFile=${projectDir}/build/tmp/reobfSrg/output.srg",
+        "-AoutRefMapFile=build/classes/java/main/mixins.twkad.refmap.json"
+    ]
 }
 
 // The below is only required if using 'maven-publish' and you want to publish to maven or use JitPack
@@ -247,10 +251,10 @@ publishing {
     }
 }
 
-//mixin {
-//    add sourceSets.main, "mixins.voltaic.refmap.json"
-//    config 'mixins.voltaic.json'
-//
-//    debug.verbose = true
-//    debug.export = true
-//}
+mixin {
+    add sourceSets.main, "mixins.twkad.refmap.json"
+    config 'mixins.twkad.json'
+
+    debug.verbose = true
+    debug.export = true
+}
